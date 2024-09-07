@@ -1,0 +1,6 @@
+Old:
+clean test -DplatformName=chrome -Dsurefire.suiteXmlFiles=testSuites/RegressionSuite.xml -DplatformName=chrome -DMailTo=karthickrajan.k@galaxyweblinks.in,p.vigneshkumar@galaxyweblinks.in -DexecutionMode=CompanyAdmin
+
+New:
+clean test -DplatformName=chrome -Dsurefire.suiteXmlFiles=testSuites/NewRegressionSuite.xml -Dtest=testClass.UsersPageTest -DplatformName=chrome -DMailTo=karthickrajan.k@galaxyweblinks.in,p.vigneshkumar@galaxyweblinks.in -DexecutionMode=CompanyAdmin
+Here, I mentioned UsersPageTest to run that alone. If I want to run all, then remove -Dtest

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="utils.Listener"></listener>
+        <!--<listener class-name="utils.RetryListener"></listener>-->
+    </listeners>
+    <test name="Pump Costing Test">
+        <classes>
+            <!--<class name="testClass.LoginPageTest"></class>
+            <class name="testClass.LogoutPageTest"></class>
+            <class name="testClass.EditProfilePageTest"></class>
+            <class name="testClass.UsersPageTest"></class>
+            <class name="testClass.ChangePasswordPageTest"></class>
+            <class name="testClass.MaterialsPageTest"></class>-->
+            <class name="testClass.PartsPageTest">
+                <methods>
+                    <include name="VerifyDropDownMenuViaKeyboard"/>
+                </methods>
+            </class>
+            <!--<class name="testClass.PartCategoriesTest"></class>-->
+        </classes>
+    </test>
+</suite>
